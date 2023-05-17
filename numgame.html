@@ -1,0 +1,49 @@
+<html>
+
+
+<head>
+    <h1>猜數字小遊戲</h1>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="numgame.js"></script>
+    <link rel="stylesheet" type="text/css" href="numgame.css">
+</head>
+    
+    
+    <body id="body" >
+      <div>
+        <h3>我們會隨機選定1-100的其中一個數字，來測試你能不能在十次機會<br>
+    以內猜中數字。我們會告訴你數字太大或太小。 <br> <br>
+     
+        <form name='form' id='form'>
+          請輸入數字:
+          <input type='num' id='numarea' name='num'/> 
+          <input type='button' id='enter' name='submit' value='送出' onclick='ProcessFormData();'  />
+          <input type='button' id='start'name='submit' value='開始遊戲' onclick='StartGame();'/>
+          
+          
+        </form>
+      <br>
+    
+    
+    <table id="table">
+       <thead id="thead"></thead>
+          <tr>
+            <th>次數</th>
+            <th>數值</th>
+            <th>大小</th>
+          </tr>
+       <tbody id="tbody"></tbody>
+    </table>
+  </h3>
+  <h4>
+    <input type='button' id='before' name='submit' value='上一個顏色' onclick='BeforeColor();'  />
+    <input type='button' id='after' name='submit' value='下一個顏色' onclick='AfterColor();'  />
+    <input type='button' id='random' name='submit' value='隨機顏色'  onclick='RandomColor();'/>
+</h4> 
+        </div>
+
+        
+    </body>
+
+</html>
+
