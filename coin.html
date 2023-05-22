@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=Big5" http-equiv="content-type">
+     
+    </head>
+    <body>       
+        <canvas id="canvas1" width="1270" height="680"></canvas>
+        <canvas id="canvas2" width="1270" height="680"></canvas>
+        <body id="body" >
+            <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+            <script src="coin/pixi.min.js"></script>
+            <script src="coin/coin.js"></script>
+            <script type="text/javascript">
+            let type = "WebGL";
+            if (!PIXI.utils.isWebGLSupported()) {
+            type = "canvas";
+            }
+    
+            PIXI.utils.sayHello(type);
+            </script>
+    
+            <link rel="stylesheet" type="text/css" href="./pixi.css">
+        </body>
+    </body>
+</html>
